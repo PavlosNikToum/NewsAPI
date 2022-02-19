@@ -133,7 +133,7 @@ public class NewsAPIService {
 		 //That means, greek language is not supported 
 		 //User can type whatever sources wants
 		 //User can also type whatever dates (from&to) wants.
-		 //https://newsapi.org/v2/everything?q=Apple&language=en&sources=bbc-news&from=2022-01-25&to=2022-01-31
+		 //https://newsapi.org/v2/everything?q=Apple&language=en&sources=bbc-news&from=2022-01-25&to=2022-01-31&apiKey=(apiKey)
 	
 	public List<newsinfo> searchEverythingNewsForDateOfPublication(String parameter,String parameter2,String parameter3,String parameter4,String parameter5) throws NewsAPIException {
 		NewsResult result = getAPIData("everything",parameter,parameter2,parameter3,parameter4,parameter5, API_URL, API_KEY); 

@@ -32,7 +32,7 @@ public class LocationbyIpDetection{
 	
 }
 //this method is used to return top-headlines for user's country by detecting automatically user's country via IP Address
-//https://ip-geolocation.whoisxmlapi.com/api/v1?apiKey=at_wSkv8q3YOk6PgE0z9D3Rv5BYO3hrb&ipAddress=2a02:587:1e04:e0ec:d478:cbdb:3e48:1789
+//https://ip-geolocation.whoisxmlapi.com/api/v1?apiKey=(apiKey)&ipAddress=(ipAddress)
 	public LocationResult searchUserLocation() throws NewsAPIException {
 		LocationResult result = getAPIData(API_URL, API_KEY, IPV6); 
 		return result;

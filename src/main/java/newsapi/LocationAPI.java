@@ -6,7 +6,7 @@ import services.LocationbyIpDetection;
 public class LocationAPI {
 	public static LocationbyIpDetection getLocationbyIPDetection() {
 		//Type your apiKey and your ipv6 address as second and third parameter
-		return new LocationbyIpDetection ("https://ip-geolocation.whoisxmlapi.com/", "apiKey, "ipv6"); 
+		return new LocationbyIpDetection ("https://ip-geolocation.whoisxmlapi.com/", "apiKey", "ipv6"); 
 		
 }
 }
