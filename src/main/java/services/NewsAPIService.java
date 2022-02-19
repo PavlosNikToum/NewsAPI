@@ -44,7 +44,7 @@ public class NewsAPIService {
 	//According to documentation in https://newsapi.org/docs/endpoints/top-headlines, 
 	//possible countries for endpoint (top-headlines) 
 	//are these: ae-ar-at-au-be-bg-br-ca-ch-cn-co-cu-cz-de-eg-fr-gb-gr-hk-hu-id-ie-il-in-it-jp-kr-lt-lv-ma-mx-my-ng-nl-no-nz-ph-pl-pt-ro-rs-ru-sa-se-sg-si-sk-th-tr-tw-ua-us-ve and za
-	//https://newsapi.org/v2/top-headlines?country=gr
+	//https://newsapi.org/v2/top-headlines?country=gr&apiKey=(apiKey)
 	
 	public List<newsinfo> getTopHeadlinesForCountry(String parameter) throws NewsAPIException {
 		NewsResult result = getAPIData("top-headlines", parameter,null,null,null,null, API_URL, API_KEY); 
@@ -60,8 +60,8 @@ public class NewsAPIService {
 	//possible countries for endpoint (top-headlines) 
 	//are these: ae-ar-at-au-be-bg-br-ca-ch-cn-co-cu-cz-de-eg-fr-gb-gr-hk-hu-id-ie-il-in-it-jp-kr-lt-lv-ma-mx-my-ng-nl-no-nz-ph-pl-pt-ro-rs-ru-sa-se-sg-si-sk-th-tr-tw-ua-us-ve and za
 	//and possible categories for endpoint (top-headlines) are these: business, entertainment, general, health, science, sports and technology
-	//https://newsapi.org/v2/top-headlines?country=gr&category=business
-	//https://newsapi.org/v2/top-headlines?country=gr&category=entertainment
+	//https://newsapi.org/v2/top-headlines?country=gr&category=business&apiKey=(apiKey)
+	//https://newsapi.org/v2/top-headlines?country=gr&category=entertainment&apiKey=(apiKey)
 	
 	 public List<newsinfo> getTopHeadlinesForCategory(String parameter, String parameter2) throws NewsAPIException {
 		NewsResult result = getAPIData("top-headlines",parameter, parameter2,null,null,null, API_URL, API_KEY); 
@@ -79,7 +79,7 @@ public class NewsAPIService {
 	 
 	    //This method is used to search everything news about a specific query
 	    //User can type whatever query wants
-		//https://newsapi.org/v2/everything?q=Apple
+		//https://newsapi.org/v2/everything?q=Apple&apiKey=(apiKey)
 		
 		public List<newsinfo> searchEverythingNewsForQuery(String parameter) throws NewsAPIException {
 			NewsResult result = getAPIData("everything",parameter,null,null,null,null, API_URL, API_KEY); 
@@ -97,7 +97,7 @@ public class NewsAPIService {
 		//are these: ar-de-en-es-fr-he-it-nl-no-pt-ru-se-ud and zh
 		//That means, greek language is not supported 
 		//User can type whatever sources wants
-		//https://newsapi.org/v2/everything?q=Apple&language=en&sources=bbc-news
+		//https://newsapi.org/v2/everything?q=Apple&language=en&sources=bbc-news&apiKey=(apiKey)
 		
 		public List<newsinfo> searchEverythingNewsForSources(String parameter,String parameter2,String parameter3) throws NewsAPIException {
 			NewsResult result = getAPIData("everything",parameter,parameter2,parameter3,null,null, API_URL, API_KEY); 
@@ -114,7 +114,7 @@ public class NewsAPIService {
 		//possible languages for endpoint (everything) 
 		//are these: ar-de-en-es-fr-he-it-nl-no-pt-ru-se-ud and zh
 		//That means, greek language is not supported 
-		//https://newsapi.org/v2/everything?q=Apple&language=en
+		//https://newsapi.org/v2/everything?q=Apple&language=en&apiKey=(apiKey)
 		
 		 public List<newsinfo> getSearchEverythingNewsForLanguage(String parameter,String parameter2) throws NewsAPIException {
 		NewsResult result = getAPIData("everything",parameter,parameter2,null,null,null, API_URL, API_KEY); 
