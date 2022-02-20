@@ -15,7 +15,7 @@ import services.NewsAPIService;
 public class NewsAPITest {
 	
 //There are some tests that have already done for my classes.
-//If user wants to test something else, they have just to change the parameters given or transfer to project NewsAPP (in the Application class) and follow thi instructions given in there.
+//If user wants to test something else, they have just to change the parameters given or transfer to project NewsAPP (in the Application class) and follow the instructions given in there.
 	
 //endpoint top-headlines
 	 
